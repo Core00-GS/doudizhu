@@ -14,8 +14,8 @@ CREATE TABLE IF NOT EXISTS ddz.user (
 
 CREATE TABLE IF NOT EXISTS ddz.record (
     id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
-    round JSON default {},
-    robot TINYINT(1) NOT NULL,
+    round JSON DEFAULT (JSON_OBJECT()),
+    robot TINYINT NOT NULL,
     last_modified DATETIME ON UPDATE CURRENT_TIMESTAMP
 );
 

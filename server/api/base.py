@@ -24,9 +24,9 @@ class JwtMixin(object):
         if not token:
             return None
         try:
-            return jwt.decode(token, SECRET_KEY)
+            return jwt.decode(token, SECRET_KEY, algorithms=['HS256'])
         except jwt.PyJWTError as e:
-            logging.error('JWT', e)
+            logging.error('JWT decode error: %s', e)
             return None
 
     @staticmethod

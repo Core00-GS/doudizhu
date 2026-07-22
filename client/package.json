@@ -3,12 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "phaser": "^3.16.2",
+    "phaser": "^3.55.2",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "react-scripts": "4.0.3",
-    "redux": "^4.0.4",
-    "redux-subscriber": "^1.1.0"
+    "react-scripts": "5.0.1"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -33,10 +31,10 @@
     ]
   },
   "devDependencies": {
-    "@types/react": "^17.0.6",
-    "@types/react-dom": "^17.0.5",
-    "source-map-loader": "^3.0.0",
-    "ts-loader": "^9.2.2",
-    "typescript": "^4.2.4"
+    "@types/jest": "^30.0.0",
+    "@types/node": "^26.1.1",
+    "@types/react": "^17.0.93",
+    "@types/react-dom": "^17.0.26",
+    "typescript": "^4.9.5"
   }
 }
